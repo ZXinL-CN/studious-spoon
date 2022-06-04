@@ -1,4 +1,4 @@
-function shallowClone(target: any) {
+export function shallowClone(target: any) {
   if (typeof target !== 'object' || target === null) return target
   const constructor = target.constructor
   if (/^(Function | Date | RegExp | Map | Set)$/i.test(constructor.name)) return target
